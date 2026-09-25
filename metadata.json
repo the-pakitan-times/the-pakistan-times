@@ -1,0 +1,8 @@
+{
+  "name": "The Pakistan Times",
+  "description": "پاکستان اور دنیا کی تازہ ترین خبریں، تجزیے اور لائیو کوریج - The Pakistan Times bilingual news platform and CMS",
+  "version": "1.0.0",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

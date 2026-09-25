@@ -11,13 +11,13 @@ async function main() {
   console.log("Seeding دی پاکستان ٹائمز...");
 
   // Permissions
-  for (const module of MODULES) {
+  for (const mod of MODULES) {
     for (const action of ACTIONS) {
-      const code = permissionCode(module, action);
+      const code = permissionCode(mod, action);
       await prisma.permission.upsert({
         where: { code },
         update: {},
-        create: { module, action, code, description: `${action} ${module}` },
+        create: { module: mod, action, code, description: `${action} ${mod}` },
       });
     }
   }

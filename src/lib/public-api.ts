@@ -26,7 +26,7 @@ function siteBaseUrl() {
     process.env.SITE_URL ||
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "");
   if (configured) return configured.replace(/\/$/, "");
-  const port = process.env.PORT || "4355";
+  const port = process.env.PORT || "3000";
   return `http://127.0.0.1:${port}`;
 }
 

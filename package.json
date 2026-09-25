@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --hostname 0.0.0.0 --port 4355",
-    "build": "prisma generate && prisma migrate deploy && next build",
-    "start": "next start --hostname 0.0.0.0 --port 4355",
+    "dev": "next dev -p 3000 -H 0.0.0.0",
+    "build": "prisma generate && next build",
+    "start": "next start -p 3000 -H 0.0.0.0",
     "lint": "eslint",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -52,6 +52,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "20.x"
+    "node": ">=20.0.0"
   }
 }
